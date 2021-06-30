@@ -10,17 +10,26 @@ public class SortEmployeeInfoUsingComparator {
     public static void main(String[] args) {
 	// write your code here
 
+//
+//        Employee employee1= new Employee(1001, "John", "Gresham", "Accounts");
+//        Employee employee2= new Employee(1002, "Sam", "Grace", "Finance");
+//        Employee employee3= new Employee(1003, "King", "Milton", "IT");
+//        Employee employee4= new Employee(1004, "Alex", "Hilton", "Admin");
+//
+//        List<Employee> employeeList = new ArrayList<>();
+//        employeeList.add(employee1);
+//        employeeList.add(employee2);
+//        employeeList.add(employee3);
+//        employeeList.add(employee4);
 
-        Employee employee1= new Employee(1001, "John", "Gresham", "Accounts");
-        Employee employee2= new Employee(1002, "Sam", "Grace", "Finance");
-        Employee employee3= new Employee(1003, "King", "Milton", "IT");
-        Employee employee4= new Employee(1004, "Alex", "Hilton", "Admin");
-
-        List<Employee> employeeList = new ArrayList<>();
-        employeeList.add(employee1);
-        employeeList.add(employee2);
-        employeeList.add(employee3);
-        employeeList.add(employee4);
+        //or using Arrays.asList
+        List<Employee> employeeList = new ArrayList<>(Arrays.asList
+                    (   new Employee(1001, "John", "Gresham", "Accounts"),
+                        new Employee(1002, "Sam", "Grace", "Finance"),
+                        new Employee(1003, "King", "Milton", "IT"),
+                        new Employee(1004, "Alex", "Hilton", "Admin")
+                    )
+        );
 
         System.out.println("Employee list as per Insertion order");
 
